@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, GraduationCap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
@@ -38,8 +38,11 @@ const Header = () => {
     }`}>
       <nav className="section-padding py-4">
         <div className="flex items-center justify-between">
-          <div className="font-serif font-bold text-xl gradient-text">
-            Mithun Halder
+          <div className="flex items-center space-x-2">
+            <GraduationCap className="h-8 w-8 text-primary" />
+            <span className="font-serif font-bold text-xl gradient-text">
+              Mithun Halder
+            </span>
           </div>
           
           {/* Desktop Navigation */}
