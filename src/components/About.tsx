@@ -7,13 +7,13 @@ const About = () => {
     <section id="about" className="py-20 bg-muted/30">
       <div className="section-padding max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-start order-2 lg:order-1">
             <div className="relative">
               <Avatar className="w-80 h-80 border-4 border-primary/20 shadow-xl">
                 <AvatarImage 
                   src="/lovable-uploads/3b80f3f3-f919-434e-8649-8388d5a9aa6f.png" 
                   alt="Mithun Halder - Computer Science Researcher"
-                  className="object-cover"
+                  className="object-cover object-top"
                 />
                 <AvatarFallback className="text-6xl font-serif font-bold text-primary">MH</AvatarFallback>
               </Avatar>
@@ -21,7 +21,7 @@ const About = () => {
             </div>
           </div>
           
-          <div className="space-y-6">
+          <div className="space-y-6 order-1 lg:order-2">
             <div>
               <h2 className="font-serif text-4xl font-bold mb-4 gradient-text">About Me</h2>
               <div className="w-20 h-1 bg-primary rounded-full mb-6"></div>
