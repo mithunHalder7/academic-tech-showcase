@@ -20,8 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
-				'playfair': ['Playfair Display', 'serif'],
+				'sans': ['Roboto', 'system-ui', 'sans-serif'],
+				'serif': ['Merriweather', 'Georgia', 'serif'],
+				'mono': ['JetBrains Mono', 'Consolas', 'monospace'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

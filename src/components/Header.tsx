@@ -38,7 +38,7 @@ const Header = () => {
     }`}>
       <nav className="section-padding py-4">
         <div className="flex items-center justify-between">
-          <div className="font-playfair font-bold text-xl gradient-text">
+          <div className="font-serif font-bold text-xl gradient-text">
             Mithun Halder
           </div>
           

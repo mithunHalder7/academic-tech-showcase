@@ -1,113 +1,73 @@
 
 import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { User, MapPin, Phone, Mail } from 'lucide-react';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const About = () => {
   return (
     <section id="about" className="py-20 bg-muted/30">
       <div className="section-padding max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4 gradient-text">
-            About Me
-          </h2>
-          <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
-        </div>
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
-            <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-0">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <User className="h-6 w-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-2">Professional Summary</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      I am Mithun Halder, hopefully a soon-to-be graduate with a B.Sc in CSE from United International University, 
-                      where I majored in Data Science. I have a strong academic foundation complemented by practical research experience, 
-                      including the publication of two peer-reviewed papers at international conferences.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-0">
-                <h3 className="font-semibold text-lg mb-4">Research Interests</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {['Machine Learning', 'Deep Learning', 'Computer Vision', 'Data Science'].map((interest) => (
-                    <div key={interest} className="bg-accent/50 px-4 py-2 rounded-lg text-center font-medium">
-                      {interest}
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-0">
-                <h3 className="font-semibold text-lg mb-4">Core Skills</h3>
-                <div className="grid grid-cols-1 gap-3">
-                  {[
-                    'Student Engagement',
-                    'Collaborative Learning', 
-                    'Leadership and Mentorship'
-                  ].map((skill) => (
-                    <div key={skill} className="bg-primary/10 px-4 py-2 rounded-lg font-medium">
-                      {skill}
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative">
+              <Avatar className="w-80 h-80 border-4 border-primary/20 shadow-xl">
+                <AvatarImage 
+                  src="/lovable-uploads/3b80f3f3-f919-434e-8649-8388d5a9aa6f.png" 
+                  alt="Mithun Halder - Computer Science Researcher"
+                  className="object-cover"
+                />
+                <AvatarFallback className="text-6xl font-serif font-bold text-primary">MH</AvatarFallback>
+              </Avatar>
+              <div className="absolute -bottom-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-4 border-background"></div>
+            </div>
           </div>
-
+          
           <div className="space-y-6">
-            <Card className="p-6 hover:shadow-lg transition-shadow duration-300">
-              <CardContent className="p-0">
-                <h3 className="font-semibold text-lg mb-6">Contact Information</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-primary/10 p-2 rounded-lg">
-                      <Phone className="h-4 w-4 text-primary" />
-                    </div>
-                    <span className="text-muted-foreground">01317801458</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-primary/10 p-2 rounded-lg">
-                      <Mail className="h-4 w-4 text-primary" />
-                    </div>
-                    <span className="text-muted-foreground">mhalder20041@bscse.uiu.ac.bd</span>
-                  </div>
-                  
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-primary/10 p-2 rounded-lg">
-                      <MapPin className="h-4 w-4 text-primary" />
-                    </div>
-                    <span className="text-muted-foreground">House no: 150, Uttar Bhashantek, Dhaka 1206</span>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow duration-300 bg-gradient-to-br from-primary/5 to-accent/20">
-              <CardContent className="p-0">
-                <h3 className="font-semibold text-lg mb-4">Academic Goals</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  My research interests encompass machine learning, deep learning, and computer vision. 
-                  I am passionate about advancing the field through innovative research and dedicated teaching, 
-                  and I am eager to contribute to a dynamic academic environment as an instructor.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mt-4">
-                  My goal is to inspire and educate the next generation of computer scientists while 
-                  continuing to explore cutting-edge research.
-                </p>
-              </CardContent>
-            </Card>
+            <div>
+              <h2 className="font-serif text-4xl font-bold mb-4 gradient-text">About Me</h2>
+              <div className="w-20 h-1 bg-primary rounded-full mb-6"></div>
+            </div>
+            
+            <div className="space-y-4 text-lg leading-relaxed text-foreground/80">
+              <p>
+                I am a dedicated Computer Science researcher and software developer with a passion for 
+                advancing the field through innovative research and practical applications. My work spans 
+                across multiple domains including Machine Learning, Deep Learning, and Computer Vision.
+              </p>
+              
+              <p>
+                With a strong foundation in both theoretical research and practical software development, 
+                I bridge the gap between academic research and real-world applications. My experience 
+                includes developing cutting-edge solutions, publishing research papers, and mentoring 
+                the next generation of computer scientists.
+              </p>
+              
+              <p>
+                I am committed to contributing to the advancement of technology through rigorous research, 
+                collaborative innovation, and the development of scalable software solutions that address 
+                complex real-world challenges.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-6 pt-6 border-t border-border">
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Research Focus</h3>
+                <ul className="space-y-1 text-sm text-muted-foreground">
+                  <li>• Machine Learning</li>
+                  <li>• Deep Learning</li>
+                  <li>• Computer Vision</li>
+                  <li>• Natural Language Processing</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-primary mb-2">Technical Skills</h3>
+                <ul className="space-y-1 text-sm text-muted-foreground">
+                  <li>• Python, Java, C++</li>
+                  <li>• TensorFlow, PyTorch</li>
+                  <li>• Research & Development</li>
+                  <li>• Academic Writing</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>

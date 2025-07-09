@@ -17,7 +17,7 @@ const Hero = () => {
       
       <div className="section-padding w-full max-w-6xl mx-auto text-center relative z-10">
         <div className="animate-fade-in">
-          <h1 className="font-playfair text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="font-serif text-5xl md:text-7xl font-bold mb-6">
             <span className="gradient-text">Mithun Halder</span>
           </h1>
           
